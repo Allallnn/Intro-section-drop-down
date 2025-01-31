@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kumbh+Sans:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+  --ff-epilogue: "Epilogue", serif;
+}
+
+body {
+  font-family: var(--ff-epilogue);
+}
+header {
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+#ul-div {
+  display: flex;
+  margin-left: 3rem;
+}
+#ul-div li {
+  color: var(--Medium-Gray);
+  width: 6rem;
+  margin: 0 1.5rem 0 1.5rem;
+}
+#div-1 {
+  display: flex;
+  flex-direction: row;
+}
+#div-2 {
+  display: flex;
+  justify-content: space-between;
+}
+#div-2 li {
+  margin: 0 1.5rem 0 1.5rem;
+}
+#li-1 {
+  border: 1px solid black;
+}
+/* Main */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65rem;
+}
+#main-text h1 {
+  font-size: 75px;
+  font-weight: 700;
+  width: 65rem;
+  padding: 0 0 1rem 20rem;
+}
+#main-text p {
+  color: var(--Medium-Gray);
+  font-size: 18px;
+  font-weight: 500;
+  width: 49rem;
+  padding: 1rem 1rem 1rem 20rem;
+}
+#main-img img {
+  width: 35rem;
+  margin-right: 20rem;
+}
+#main-text button {
+  background-color: black;
+  color: var(--Almost-White);
+  height: 3rem;
+  width: 10rem;
+  border: none;
+  border-radius: 1rem;
+  margin: 2rem 1rem 1rem 20rem;
+}
+/* Footer */
+.footer-div-container {
+  display: flex;
+  flex-direction: row;
+  width: 30rem;
+  margin: 0 0 0 20rem;
+}
+.footer-div-container .footer-icon {
+  margin: 1rem;
+}
