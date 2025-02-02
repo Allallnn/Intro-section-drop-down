@@ -18,6 +18,12 @@ body {
 header {
   padding: 1rem;
 }
+header h1 {
+  font-size: 40px;
+}
+#snap-1 {
+  display: none;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -39,16 +45,34 @@ ul {
 #div-1 {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+#company-div {
+  display: flex;
+  justify-content: space-between;
+}
+#feature-div {
+  display: flex;
+  justify-content: space-between;
 }
 #div-2 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #div-2 li {
   margin: 0 1.5rem 0 1.5rem;
+  display: flex;
+  align-items: center;
 }
-#li-1 {
-  border: 1px solid black;
+#li-1 li {
+  display: flex;
+  align-items: center;
+}
+#li-2 {
+  border: black solid 1px;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 /* Main */
 main {
@@ -60,7 +84,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 65rem;
+  width: 60rem;
 }
 #main-text h1 {
   font-size: 75px;
@@ -77,11 +101,12 @@ main {
 }
 #main-img img {
   width: 35rem;
-  margin-right: 20rem;
+  margin-right: 10rem;
 }
 #main-text button {
   background-color: black;
   color: var(--Almost-White);
+  font-size: 17.5px;
   height: 3rem;
   width: 10rem;
   border: none;
@@ -97,4 +122,57 @@ main {
 }
 .footer-div-container .footer-icon {
   margin: 1rem;
+}
+@media (max-width: 414px) {
+  html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body {
+    height: 100vh;
+    width: 20rem;
+  }
+  #snap-1{
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #main-text p {
+    color: var(--Medium-Gray);
+    font-size: 15px;
+    font-weight: 500;
+    width: ;
+  }
+  #main-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  #main-img img {
+background-image: ;
+    display: flex;
+    height: 25rem;
+    width: 25rem;
+    margin-left: 16rem;
+  }
+  #main-text button {
+    height: 3rem;
+    width: 9rem;
+  }
+  footer {
+    display: flex;
+    width: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
