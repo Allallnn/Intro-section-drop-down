@@ -26,7 +26,6 @@ header h1 {
 }
 nav {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 ul {
@@ -35,7 +34,7 @@ ul {
 }
 #ul-div {
   display: flex;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
 }
 #ul-div li {
   color: var(--Medium-Gray);
@@ -99,6 +98,9 @@ main {
   width: 49rem;
   padding: 1rem 1rem 1rem 20rem;
 }
+#main-img-2 {
+  display: none;
+}
 #main-img img {
   width: 35rem;
   margin-right: 10rem;
@@ -123,8 +125,8 @@ main {
 .footer-div-container .footer-icon {
   margin: 1rem;
 }
-@media (max-width: 414px) {
-  html{
+@media (max-width: 600px) {
+  html {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,47 +134,94 @@ main {
   }
   body {
     height: 100vh;
-    width: 20rem;
+    overflow-x: hidden;
+    /* width: 22rem; */
   }
-  #snap-1{
+  #snap-1 {
+    width: 26rem;
     display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #snap-1 img {
+    height: 2rem;
+    width: 3rem;
   }
 
   nav {
     display: none;
+  }
+  #ul-div {
+
+  }
+  #ul-div li {
+    color: var(--Medium-Gray);
+    width: 6rem;
+    margin: 0 1.5rem 0 1.5rem;
+  }
+  #div-2 li {
+margin: 0;
   }
   main {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+  }
+  #main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    margin: 2rem;
   }
   #main-text p {
     color: var(--Medium-Gray);
     font-size: 15px;
     font-weight: 500;
-    width: ;
+    width: 22rem;
+    margin: 0;
+    padding: 0;
   }
   #main-text h1 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
+    margin: 0;
   }
-
+  #main-img-2 {
+    display: block;
+    max-width: 21.5rem;
+  }
+  #main-img-2 img {
+    height: 20rem;
+    width: 27rem;
+  }
   #main-img img {
-background-image: ;
-    display: flex;
-    height: 25rem;
-    width: 25rem;
-    margin-left: 16rem;
+    display: none;
+    width: 0rem;
   }
   #main-text button {
     height: 3rem;
     width: 9rem;
+    margin: 1rem 0 1rem 0;
   }
   footer {
+  }
+  .footer-div-container {
+    width: 22rem;
     display: flex;
-    width: 3rem;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .footer-div-container img {
+    width: 5rem;
+  }
+  .footer-div-container .footer-icon {
+    margin: 0;
   }
 }
