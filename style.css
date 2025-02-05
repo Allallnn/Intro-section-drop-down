@@ -85,6 +85,9 @@ main {
   justify-content: center;
   width: 60rem;
 }
+#main-text-2 {
+display: none;
+}
 #main-text h1 {
   font-size: 75px;
   font-weight: 700;
