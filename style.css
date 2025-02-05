@@ -156,9 +156,6 @@ display: none;
   nav {
     display: none;
   }
-  #ul-div {
-
-  }
   #ul-div li {
     color: var(--Medium-Gray);
     width: 6rem;
