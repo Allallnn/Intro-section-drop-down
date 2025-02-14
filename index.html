@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intro Section Drop Down</title>
+    <title>Intro Section Drop Down Practice</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
@@ -12,97 +12,75 @@
     />
   </head>
   <body>
-    <!-- Header -->
     <!-- nav -->
-    <header class="header">
-      <div id="snap-1">
-      <h1>snap</h1>
-      <img src="assets/icon-menu.svg" alt="menu-icon">
-    </div>
-      <nav>
-        <div id="div-1">
-          <h1>snap</h1>
-          <div id="ul-div">
-            <ul>
-              <li>
-                <li>
-                  <div id="feature-div">Features<span><img src="assets/icon-arrow-down.svg" alt="arrow-down-img"
-                    /></span></div>
-                </li>
-              <li>
-                <div id="company-div">Company<span><img src="assets/icon-arrow-down.svg" alt="arrow-down-img"
-                  /></span></div>
-              </li>
-              <li>Careers</li>
-              <li>About</li>
-            </ul>
+    <nav class="container">
+      <div class="nav-div-1">
+        <!-- nav-logo -->
+        <div id="nav-logo">
+          <img src="assets/logo.svg" alt="nav-logo" />
+        </div>
+        <ul>
+          <li>
+            Feature
+            <img src="assets/icon-arrow-down.svg" alt="icon-arrow-down" />
+          </li>
+          <li>
+            Company
+            <img src="assets/icon-arrow-down.svg" alt="icon-arrow-down" />
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <!-- div-login and reg -->
+      <div class="nav-auth">
+        <ul>
+          <li>Login</li>
+          <button>Register</button>
+        </ul>
+      </div>
+      <!-- menu-icon -->
+      <div class="menu-icon">
+        <img src="assets/icon-menu.svg" alt="menu-icon" />
+      </div>
+    </nav>
+    <main>
+      <!-- section-1 -->
+      <section class="section-1">
+        <img
+          src="assets/Image20250204161055.png"
+          alt="image-hero-mobile"
+          id="mobile-hero"
+        />
+        <img
+          src="assets/Image20250128161618.png"
+          alt="image-hero-desktop"
+          id="desktop-hero"
+        />
+      </section>
+      <!-- section-2 -->
+      <section class="section-2 container">
+        <div>
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <div class="section-2-btn-wrapper">
+            <button>Learn More</button>
           </div>
         </div>
-
-        <div id="div-2">
-          <ul>
-            <li d="li-1">Login</li>
-            <li id="li-2">Register</li>
-          </ul>
+        <div class="section-2-imgs">
+          <div>
+            <img src="assets/client-databiz.svg" alt="databiz-img" />
+          </div>
+          <div>
+            <img src="assets/client-audiophile.svg" alt="audiophile-img" />
+          </div>
+          <div><img src="assets/client-meet.svg" alt="meet-img" /></div>
+          <div><img src="assets/client-maker.svg" alt="maker-img" /></div>
         </div>
-      </nav>
-    </header>
-    <!-- Main -->
-    <main>
-      <div id="main-text">
-        <h1>Make <span>remote work</span></h1>
-        <p>
-          Get your team in sync, no matter what location. Streamline procces,
-          create team rituals, and watch productivity soar
-        </p>
-        <button>Learn more</button>
-      </div>
-      <div id="main-text-2">
-        <h1>Make <span>remote work</span></h1>
-        <p>
-          Get your team in sync, no matter what location. Streamline procces,
-          create team rituals, and watch productivity soar
-        </p>
-        <button>Learn more</button>
-      </div>
-      <div id="main-img-2">
-<img src="assets/Image20250204161055.png" alt="main-img-2">
-      </div>
-      <div id="main-img">
-        <img src="assets/Image20250128161618.png" alt="main-img" />
-      </div>
+      </section>
     </main>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-div-container">
-        <ion-icon class="footer-icon" name="logo-databiz"
-          ><img src="assets/client-databiz.svg" alt="databiz-img"
-        /></ion-icon>
-        <ion-icon class="footer-icon" name="logo-audiphile"
-          ><img src="assets/client-audiophile.svg" alt="audiphile img"
-        /></ion-icon>
-        <ion-icon class="footer-icon" name="logo-meet"
-          ><img src="assets/client-meet.svg" alt="meet-img"
-        /></ion-icon>
-        <ion-icon class="footer-icon" name="logo-maker"
-          ><img src="assets/client-maker.svg" alt="maker-img"
-        /></ion-icon>
-      </div>
-      <div class="footer-div-container-2">
-        <ion-icon class="footer-icon" name="logo-databiz"
-          ><img src="assets/client-databiz.svg" alt="databiz-img"
-        /></ion-icon>
-        <ion-icon class="footer-icon" name="logo-audiphile"
-          ><img src="assets/client-audiophile.svg" alt="audiphile img"
-        /></ion-icon>
-        <ion-icon class="footer-icon" name="logo-meet"
-          ><img src="assets/client-meet.svg" alt="meet-img"
-        /></ion-icon>
-        <ion-icon class="footer-icon" name="logo-maker"
-          ><img src="assets/client-maker.svg" alt="maker-img"
-        /></ion-icon>
-      </div>
-    </footer>
   </body>
 </html>
